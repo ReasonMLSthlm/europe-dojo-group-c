@@ -1,7 +1,0 @@
-# ninja log v5
-2	13	1527427199	TestProject.cmi	58cfcb02044b0ef3
-1	56	1527427199	src/Demo.mlast	cb1ca60fd5bfaa6d
-56	68	1527427199	src/Demo.mlast.d	d4638f93e940860c
-0	25	1527427199	src/Demo-TestProject.cmj	efba20de57f8f32e
-0	25	1527427199	/Users/max/code/reason/test-project/src/Demo.bs.js	efba20de57f8f32e
-0	25	1527427199	src/Demo-TestProject.cmi	efba20de57f8f32e
