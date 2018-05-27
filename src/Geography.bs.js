@@ -4,12 +4,20 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var ReactSimpleMaps = require("react-simple-maps");
 
+var style = /* record */[
+  /* default : record */[/* fill */"#666"],
+  /* hover : record */[/* fill */"#999"],
+  /* pressed : record */[/* fill */"#000"]
+];
+
 function make(geography, projection, children) {
   return ReasonReact.wrapJsForReason(ReactSimpleMaps.Geography, {
+              style: style,
               geography: geography,
               projection: projection
             }, children);
 }
 
+exports.style = style;
 exports.make = make;
 /* ReasonReact Not a pure module */
