@@ -9,10 +9,15 @@ let make = _children => {
           <Geographies geography="world-50m.json">
             (
               (geographies, p) =>
-                Array.mapi((i, geography) => {
-                    Js.log(i);
-                      <Geography key=string_of_int(i) geography projection=p />
-                    }, geographies)
+                List.mapi(
+                  (i, geography) =>
+                    <Geography
+                      key=(string_of_int(i))
+                      geography
+                      projection=p
+                    />,
+                  geographies,
+                )
             )
           </Geographies>
         </ZoomableGroup>
