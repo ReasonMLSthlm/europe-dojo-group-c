@@ -9,7 +9,7 @@ let make = _children => {
           <Geographies geography="world-50m.json">
             (
               (geographies, p) =>
-                List.mapi(
+                Array.mapi(
                   (i, geography) =>
                     <Geography
                       key=(string_of_int(i))
